@@ -1,6 +1,6 @@
 1.What is Docker?
 Docker is an open-source platform that automates the deployment, scaling, and management of applications inside containers.
-   
+    
 2.What are containers?
 A container is a lightweight, standalone executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools.
 
