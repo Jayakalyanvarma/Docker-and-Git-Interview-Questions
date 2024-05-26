@@ -1,0 +1,89 @@
+1.What is Docker?
+Docker is an open-source platform that automates the deployment, scaling, and management of applications inside containers.
+
+2.What are containers?
+A container is a lightweight, standalone executable package that includes everything needed to run a piece of software, including the code, runtime, libraries, and system tools.
+
+3.What is the difference between Docker container and virtual machine (VM)?
+Docker containers share the host OS kernel, making them more lightweight and faster to start compared to VMs, which require a separate OS for each instance.
+
+4.How do you install Docker?
+Docker can be installed on various operating systems including Linux, Windows, and macOS. Installation instructions can be found on the Docker website.
+
+5.What is a Docker image?
+A Docker image is a read-only template used to create containers. It contains the application code, runtime, libraries, and dependencies needed to run the application.
+
+6.How do you create a Docker image?
+Docker images can be created using a Dockerfile, which is a text file that contains instructions to build the image layer by layer.
+
+7.What is a Dockerfile?
+A Dockerfile is a text file that contains instructions to build a Docker image. It specifies the base image, dependencies, environment variables, and commands needed to run the application.
+
+8.What is Docker Hub?
+Docker Hub is a cloud-based repository where Docker users can share and download Docker images. It provides access to thousands of pre-built images for popular software applications.
+
+9.How do you pull an image from Docker Hub?
+You can pull an image from Docker Hub using the docker pull command followed by the name of the image and optionally the tag.
+
+10.What is Docker Compose?
+Docker Compose is a tool for defining and running multi-container Docker applications. It uses a YAML file to configure the application's services, networks, and volumes.
+
+11.What is Docker Swarm?
+Docker Swarm is a native clustering and orchestration tool for Docker containers. It allows you to create and manage a cluster of Docker hosts, called nodes, to deploy and scale applications across multiple machines.
+
+12.What is the difference between Docker Swarm and Kubernetes?
+Docker Swarm is a simpler, built-in orchestration tool provided by Docker, while Kubernetes is a more powerful and feature-rich container orchestration platform developed by Google.
+
+13.How do you deploy a Docker container to production?
+Docker containers can be deployed to production using container orchestration platforms like Docker Swarm or Kubernetes, which automate the deployment, scaling, and management of containerized applications.
+
+14.What is Docker volume?
+Docker volume is a persistent data storage mechanism used to store and share data between containers and between containers and the host machine.
+
+15.How do you create a Docker volume?
+Docker volumes can be created using the docker volume create command followed by the name of the volume.
+
+16.What is Docker networking?
+Docker networking allows containers to communicate with each other and with external networks. Docker provides various networking drivers to support different networking modes.
+
+17.What is Docker container orchestration?
+Docker container orchestration is the process of automating the deployment, scaling, and management of containerized applications across a cluster of machines.
+
+18.What is Dockerfile caching?
+Dockerfile caching is a mechanism used by Docker to speed up the build process by reusing intermediate image layers from previous builds if the Dockerfile has not changed.
+
+19.How do you troubleshoot Docker containers?
+Docker provides various commands and tools for troubleshooting containers, including docker ps, docker logs, docker inspect, and docker exec.
+
+20.What is Docker-compose up command used for?
+The docker-compose up command is used to start the services defined in a Docker Compose file. It creates and starts containers for each service and attaches them to the specified networks.
+
+21.How do you scale Docker containers?
+Docker containers can be scaled horizontally by increasing the number of container instances using the docker service scale command in Docker Swarm or by adjusting the replica count in a Kubernetes deployment.
+
+22.What is Docker registry?
+Docker registry is a storage and distribution service for Docker images. It allows users to store, share, and distribute Docker images privately or publicly.
+
+23.How do you secure Docker containers?
+Docker containers can be secured by following best practices such as using trusted base images, minimizing the attack surface, applying security patches regularly, and implementing network segmentation and access controls.
+
+24.What is Docker health check?
+Docker health check is a feature that allows you to monitor the health of a containerized application by periodically running a command inside the container to check its status.
+
+25.How do you monitor Docker containers?
+Docker containers can be monitored using various tools and services such as Docker Stats, cAdvisor, Prometheus, Grafana, and Docker Enterprise Edition.
+
+27.What is Dockerfile?
+A Dockerfile is a text file that contains instructions for building a Docker image. It specifies the base image, dependencies, environment variables, and commands needed to run the application.
+
+28.How do you share data between Docker containers?p
+Data can be shared between Docker containers using Docker volumes, bind mounts, or shared network drives.
+
+29.What is Docker overlay network?
+Docker overlay network is a multi-host network driver used to facilitate communication between containers running on different Docker hosts in a Swarm cluster.
+
+30.What is the difference between CMD and ENTRYPOINT in a Dockerfile?
+CMD specifies the default command to run when a container is started, while ENTRYPOINT specifies the executable to run when the container starts. CMD can be overridden at runtime, while ENTRYPOINT cannot.
+
+31.How do you remove Docker containers and images?
+Docker containers can be removed using the docker rm command, and Docker images can be removed using the docker rmi command. Unused resources can be cleaned up using the docker system prune command.
