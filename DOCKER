@@ -87,3 +87,57 @@ CMD specifies the default command to run when a container is started, while ENTR
 
 31.How do you remove Docker containers and images?
 Docker containers can be removed using the docker rm command, and Docker images can be removed using the docker rmi command. Unused resources can be cleaned up using the docker system prune command.
+
+32.Explain Docker File commands?
+FROM: Specifies the base image for the Docker container.it can be pulled from docker hub
+(for example- if we want to create a javascript application with node as backend then we need to have node as a base image, so it can run node application.)
+
+COPY: It is used to copy your local files/directories to Docker Container.
+
+ADD: Similar to COPY, but also supports URLs and automatically extracts compressed files.
+
+RUN: Executes commands in the container during image build.
+
+CMD: Sets the default command to run when the container starts.
+
+ENV: Sets environment variables inside the image
+
+ENTRYPOINT : Define a container's executable (You cannot override and ENTRYPOINT when starting a container unless you add the --entrypoint flag.)
+
+LABEL: Adds metadata to the image.
+
+WORKDIR: Defines the working directory for subsequent instructions in the Dockerfile.
+
+VOLUME: Declares a mount point with a specified path within the container.
+
+33.what is docker multistage build?
+Docker multi-stage build is a feature that allows you to have more than one FROM statement, each representing a stage in your Dockerfile. Each stage starts with a fresh image that can be used to perform specific tasks. With multi-stage Dockerfiles, you can also share data between build stages. This way, you can build the application in one stage and copy only the necessary components that the application needs to run to the final image, resulting in smaller and more optimized Docker images.
+
+34.how to mount a volume to a docker container?
+we can use docker run -v <host-path>:<container-path> <image-name>
+
+35.Explain networking Types in Docker?
+Docker provides several networking types to facilitate communication between containers, between containers and the host, and between containers and external networks. Here are the main networking types in Docker:
+
+Bridge Network: This is the default network created when Docker is installed. Each container on a bridge network gets its own private IP address, and containers can communicate with each other by using these IP addresses. Bridge networking is suitable for most use cases, where you want containers on the same host to communicate with each other.
+
+Host network: It is a networking mode in Docker where a Docker container shares the network namespace of the Docker host machine. This means that the container has the same IP address and ports as the host machine.
+The application inside the container can be accessed using a port at the host's IP address (e.g., port 80).
+
+OverLay Network: The overlay network driver creates a distributed network among multiple Docker daemon hosts.Overlay networks are used to connect containers running on different Docker hosts.
+
+36.Explain docker Components or Docker Architecture?
+
+DockerClient:The Docker client is a command-line interface (CLI) tool that allows users to interact with the Docker daemon.
+The Docker client can be used to perform a variety of tasks, including:
+Building, running, and stopping containers
+
+Docker Daemon:The Docker daemon (dockerd) is a background process that manages Docker objects such as images, containers, networks, and volumes. It is responsible for building, running, and distributing Docker containers.
+
+Docker Host:The Docker host is the system where the Docker Engine is installed and runs, providing the infrastructure for creating, managing, and executing containers.
+
+Docker Registry:All the docker images are stored in the docker registry.There is a public registry which is known as a docker hub that can be used by anyone.Docker Hub is a cloud-based repository where Docker users can share and download Docker images. It provides access to thousands of pre-built images for popular software applications.
+
+Docker Objects:
+---------
+
