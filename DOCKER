@@ -138,6 +138,11 @@ Docker Host:The Docker host is the system where the Docker Engine is installed a
 
 Docker Registry:All the docker images are stored in the docker registry.There is a public registry which is known as a docker hub that can be used by anyone.Docker Hub is a cloud-based repository where Docker users can share and download Docker images. It provides access to thousands of pre-built images for popular software applications.
 
-Docker Objects:
----------
+Docker Objects:Docker objects are the fundamental components of Docker. They are used to build, run, and manage containerized applications. The main Docker objects are:Images,Containers,Storage,networking.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+BASIC DOCKER COMMANDS
+----------------------
+1.Building a Docker Immage:     docker build -t <image-name> <path-to-dockerfile>
+
 
