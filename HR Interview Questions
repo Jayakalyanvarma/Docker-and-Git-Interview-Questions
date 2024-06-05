@@ -1,0 +1,28 @@
+1.What Kind of Technology used in your Project?
+explain:AWS s3,Aws Lambda,Aws Polly for speech to text conversion Project
+Challenges:Firstly, I faced issues with configuring the S3 bucket to properly trigger the Lambda function.
+To troubleshoot this, I checked the IAM roles and policies to ensure that the Lambda function had the necessary permissions to access the S3 bucket.
+
+Integrating AWS Polly with the Lambda.
+ Studied documentation of aws polly how to integrate with the lambda.
+
+Water Quality classificstion Project
+Data Loading: Python with Pandas and NumPy for loading structured data.
+Data Preprocessing: Pandas and Scikit-learn for cleaning data, handling missing values, and transformation.
+Data Visualization: Matplotlib, Seaborn, and Plotly for creating static and interactive visualizations.
+Model Building: Scikit-learn for implementing the k-Nearest Neighbors algorithm and Jupyter Notebooks for experimentation.
+Model Evaluation: Scikit-learn for evaluating model performance using metrics like accuracy, precision, recall, and F1 score, with NumPy for mathematical operations.
+
+2.What is your area of interests?
+i interested in aws cloud,Devops and python and i will learn any new technology when the company needed.
+
+3.Why It Compant?
+i have a strong passion to work in it comany.to explore new technologies and implementing in real time.it gives me satisfaction
+
+4.explain positive and negative things of Tcs?
+In tcs we have job security and more to learn and explore working here is a great fun. Only disadvantage is salary packages.
+
+5.How do you manage your stress?
+Whenever i face a Stress full situation.i try to break down the situation into smaller managable tasks,i also ensure that i take regular beaks to give myself time to relax and focus.
+
+
