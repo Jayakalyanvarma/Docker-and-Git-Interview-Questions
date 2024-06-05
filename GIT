@@ -1,0 +1,19 @@
+1.Define Git?
+Git is a distributed version control system designed to track changes in source code during software development.Git allows multiple developers to work on a project simultaneously without interfering with each other's work.
+
+2.what is Version control System?
+Version control systems are software tools that help software teams manage changes to source code over time.
+
+3.what is github?
+GitHub is a web-based platform and service that provides hosting for software development projects that use the Git version control system. It offers a wide range of features to facilitate collaboration among developers, project management, code review, and continuous integration.
+
+4.what is git Repository?
+A Git repository is a central storage location for managing and tracking changes in files and directories.
+
+5.Git working Process?
+1.initialize git repository
+2.Adding files
+3.Commiting Changes
+4.Check the Status using their appriopiate commands.
+
+6.
