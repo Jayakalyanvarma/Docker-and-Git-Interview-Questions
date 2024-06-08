@@ -1,6 +1,14 @@
 1.Define Git?
 Git is a distributed version control system designed to track changes in source code during software development.Git allows multiple developers to work on a project simultaneously without interfering with each other's work.
 
+why git is used?
+Collaboration: Allows multiple developers to work on the same project simultaneously.
+Offline Work: Developers can work offline and commit changes locally without a network connection.
+Redundancy: Every user has a complete copy of the repository, reducing the risk of data loss.
+
+What is a conflict in Git?
+A conflict in Git occurs when two branches have made edits to the same line in a file or when one branch deletes a file while the other branch modifies it. Git cannot automatically resolve these changes; the developer must manually resolve the conflicts.
+
 2.what is Version control System?
 Version control systems are software tools that help software teams manage changes to source code over time.
 
@@ -18,6 +26,17 @@ A Git repository is a central storage location for managing and tracking changes
 
 6.what is .git folder?
 .git is a hidden directory in a Git repository that stores all the metadata, configuration, and object database needed for version control. It enables Git to track changes, manage branches, and maintain the history of the project.
+
+7.what happens you delete .git?
+History: All commit history will be lost
+Branches: Information about branches will be lost.
+
+8.diff between git fetch and push?
+Purpose: git fetch updates your local repository with changes from the remote repository.
+Purpose: git push uploads your local commits to a remote repository.
+
+9.what is .gigitnore?
+ gitignore file is used in a git repository to ignore the files and directories which are unnecessary to project this will be ignored by the git once the changes as been committed to the Remote repository.
 
 Repository:
 A repository (repo) is a directory that contains your project's files and the entire history of changes made to those files, managed by Git.
@@ -51,67 +70,13 @@ Configuration:
 
 git config --global user.name "name": Sets the username for all repositories on the system.
 git config --global user.email "email": Sets the email for all repositories on the system.
-Basic Workflow
-Adding Changes:
 
-git add <file>: Stages changes to be included in the next commit.
-Committing Changes:
+Conflict: A situation where Git cannot automatically merge changes and requires manual resolution.
 
-git commit -m "message": Records staged changes to the repository with a descriptive message.
-Status and Information:
+How do you change the last commit?
+Use `git commit --amend` to modify the most recent commit. This can change the commit's message or include new changes.
 
-git status: Displays the state of the working directory and staging area.
-git log: Shows the commit history for the repository.
-Viewing Differences:
+How do you list all the remote repositories configured?
+Use `git remote -v` to list all the remote repositories configured for your local repository.
 
-git diff: Displays differences between commits, branches, or the working directory and staging area.
-git show <commit>: Displays changes from a specific commit.
-Branching and Merging
-Branch Management:
 
-git branch: Lists, creates, or deletes branches.
-Switching Branches:
-
-git checkout <branch>: Switches to the specified branch and updates the working directory.
-git switch <branch>: A newer alternative to git checkout for switching branches.
-Merging:
-
-git merge <branch>: Integrates changes from the specified branch into the current branch.
-Rebasing:
-
-git rebase <branch>: Reapplies commits on top of another base commit, creating a linear history.
-Remote Repositories
-Remote Management:
-
-git remote: Manages set of tracked repositories.
-Fetching Changes:
-
-git fetch: Downloads objects and refs from another repository without merging.
-Pulling Changes:
-
-git pull: Fetches and integrates changes from a remote repository into the current branch.
-Pushing Changes:
-
-git push: Updates the remote repository with local commits.
-Tags
-Creating Tags:
-git tag <tagname>: Creates a new tag pointing to a specified commit.
-Stashing
-Stashing Changes:
-git stash: Temporarily shelves changes in the working directory that are not ready to be committed.
-Applying Stashes:
-
-git stash pop: Applies stashed changes and removes them from the stash list.
-Undoing Changes
-Resetting Changes:
-
-git reset <commit>: Moves the current branch pointer to a specified commit, optionally modifying the staging area and working directory.
-Reverting Changes:
-
-git revert <commit>: Creates a new commit that undoes the changes from a specified commit.
-Removing Files:
-
-git rm <file>: Removes a file from the working directory and stages the removal.
-Renaming Files:
-
-git mv <oldname> <newname>: Renames a file and stages the change.
